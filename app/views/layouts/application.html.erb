@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TestApp5</title>
+    <title>ChatApp </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div class="ui large inverted menu">
+    <div class="ui container">
+      <%= render 'layouts/navigation'%>
+      
+  </div>
+</div> 
+
+   <div class="ui container">
+
+   <%= render 'layouts/messages' %>
+      <%= yield %>
+   </div>
   </body>
 </html>
